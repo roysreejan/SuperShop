@@ -1,0 +1,12 @@
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\bin\Debug\SuperShop.exe.config
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\bin\Debug\SuperShop.exe
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\bin\Debug\SuperShop.pdb
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.csprojAssemblyReference.cache
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.Properties.Resources.resources
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.csproj.GenerateResource.cache
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.csproj.CoreCompileInputs.cache
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.exe
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.pdb
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.Login.resources
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.AdminDashboard.resources
+E:\AIUB\SEMESTER-7\OOP2\FINAL TERM\SuperShop\SuperShop\obj\Debug\SuperShop.RemoveProduct.resources
