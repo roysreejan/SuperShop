@@ -31,13 +31,13 @@ namespace SuperShop
 
         private void Loginbutton_Click(object sender, EventArgs e)
         {
+            string role = RoleSelect.Text;
             string user_id = UserID_textBox.Text;
             string password = passwrodbox.Text;
-            string role = RoleSelect.Text;
             string ErrMsg = null;
             if (RoleSelect.Text.Equals(""))
             {
-                ErrMsg += "Invalid Role";
+                ErrMsg += "Invalid Role!!!";
             }
             else
             {
@@ -45,7 +45,7 @@ namespace SuperShop
             }
             if (UserID_textBox.Text.Equals(""))
             {
-                ErrMsg += "\nUserName Required";
+                ErrMsg += "\nUserName Required!!!";
             }
             else
             {
@@ -54,7 +54,7 @@ namespace SuperShop
 
             if (passwrodbox.Text.Equals(""))
             {
-                ErrMsg += "\nPassword Required";
+                ErrMsg += "\nPassword Required!!!";
             }
             else
             {
@@ -85,7 +85,7 @@ namespace SuperShop
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username or password");
+                        MessageBox.Show("Invalid role or username or password!!!");
                     }
                     conn.Close();
 

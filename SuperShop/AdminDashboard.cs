@@ -96,9 +96,6 @@ namespace SuperShop
             int initial_stock;
             int buying_price;
             int selling_price;
-            //int initial_stock = Int32.Parse(Istock.Text); 
-            //int buying_price = Int32.Parse(Priceadmin.Text);
-            //int selling_price = Int32.Parse(Sellprice.Text);
             string ErrMsg = null;
 
             if (CustomerNameTextboxSales.Text.Equals(""))
@@ -124,7 +121,7 @@ namespace SuperShop
             }
             else
             {
-                ErrMsg += "\nAdd Initial_Stock!!!";
+                ErrMsg += "\nAdd Initial Stock!!!";
             }
     
             if (int.TryParse(Priceadmin.Text, out buying_price))
@@ -133,7 +130,7 @@ namespace SuperShop
             }
             else
             {
-                ErrMsg += "\nAdd Buying_price!!!";
+                ErrMsg += "\nAdd Buying Price!!!";
             }
           
             if (int.TryParse(Sellprice.Text, out selling_price))
@@ -142,7 +139,7 @@ namespace SuperShop
             }
             else
             {
-                ErrMsg += "\nAdd Selling_price!!!";
+                ErrMsg += "\nAdd Selling Price!!!";
             }
 
             if (ErrMsg == null)
@@ -167,7 +164,7 @@ namespace SuperShop
                     }
                     else
                     {
-                        MessageBox.Show("Insert Failed");
+                        MessageBox.Show("Insert Failed!!!");
                     }
                 }
                 catch (Exception ex)
@@ -202,7 +199,7 @@ namespace SuperShop
             }
             else
             {
-                ErrMsg += "\nAdd Produc Id!!!";
+                ErrMsg += "\nAdd Product Id!!!";
             }
             if (ErrMsg == null)
             {

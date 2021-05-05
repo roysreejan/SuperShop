@@ -29,15 +29,16 @@ namespace SuperShop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.RoleSelect = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.UserID_textBox = new System.Windows.Forms.TextBox();
             this.passwrodbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Loginbutton = new System.Windows.Forms.Button();
             this.Exitbtn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -100,21 +101,9 @@ namespace SuperShop
             this.label3.TabIndex = 4;
             this.label3.Text = "Password:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(308, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 33);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Super Shop";
-            // 
             // Loginbutton
             // 
-            this.Loginbutton.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.Loginbutton.BackColor = System.Drawing.Color.Aquamarine;
             this.Loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginbutton.Location = new System.Drawing.Point(298, 288);
             this.Loginbutton.Name = "Loginbutton";
@@ -126,7 +115,7 @@ namespace SuperShop
             // 
             // Exitbtn
             // 
-            this.Exitbtn.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.Exitbtn.BackColor = System.Drawing.Color.Aquamarine;
             this.Exitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exitbtn.Location = new System.Drawing.Point(428, 288);
             this.Exitbtn.Name = "Exitbtn";
@@ -136,23 +125,36 @@ namespace SuperShop
             this.Exitbtn.UseVisualStyleBackColor = false;
             this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Aquamarine;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(313, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 33);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Super Shop";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.Aquamarine;
             this.BackgroundImage = global::SuperShop.Properties.Resources.Supershop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(761, 390);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.Loginbutton);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.passwrodbox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.UserID_textBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.RoleSelect);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -169,9 +171,9 @@ namespace SuperShop
         private System.Windows.Forms.TextBox UserID_textBox;
         private System.Windows.Forms.TextBox passwrodbox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Loginbutton;
         private System.Windows.Forms.Button Exitbtn;
+        private System.Windows.Forms.Label label7;
     }
 }
 

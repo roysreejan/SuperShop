@@ -122,5 +122,10 @@ namespace SuperShop
             AdminDashboard Admin = new AdminDashboard();
             Admin.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

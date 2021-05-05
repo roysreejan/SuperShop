@@ -30,6 +30,7 @@ namespace SuperShop
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.label1 = new System.Windows.Forms.Label();
             this.purchasepricelabel = new System.Windows.Forms.Label();
             this.Priceadmin = new System.Windows.Forms.TextBox();
@@ -57,17 +58,21 @@ namespace SuperShop
             this.btn_load = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
             this.btnremove = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.AdminAddproductpanel.SuspendLayout();
             this.admindashsearchicon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Aquamarine;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 25);
+            this.label1.Location = new System.Drawing.Point(38, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 22);
             this.label1.TabIndex = 0;
@@ -112,7 +117,7 @@ namespace SuperShop
             this.AdminAddproductpanel.Controls.Add(this.ProductCata);
             this.AdminAddproductpanel.Controls.Add(this.ProductName);
             this.AdminAddproductpanel.Controls.Add(this.CustomerNameTextboxSales);
-            this.AdminAddproductpanel.Location = new System.Drawing.Point(130, 74);
+            this.AdminAddproductpanel.Location = new System.Drawing.Point(224, 58);
             this.AdminAddproductpanel.Name = "AdminAddproductpanel";
             this.AdminAddproductpanel.Size = new System.Drawing.Size(643, 173);
             this.AdminAddproductpanel.TabIndex = 27;
@@ -250,7 +255,7 @@ namespace SuperShop
             this.admindashsearchicon.Controls.Add(this.btnSearch);
             this.admindashsearchicon.Controls.Add(this.productid);
             this.admindashsearchicon.Controls.Add(this.pidSearch);
-            this.admindashsearchicon.Location = new System.Drawing.Point(130, 268);
+            this.admindashsearchicon.Location = new System.Drawing.Point(224, 263);
             this.admindashsearchicon.Name = "admindashsearchicon";
             this.admindashsearchicon.Size = new System.Drawing.Size(643, 114);
             this.admindashsearchicon.TabIndex = 28;
@@ -388,11 +393,11 @@ namespace SuperShop
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(130, 398);
+            this.dataGridView1.Location = new System.Drawing.Point(224, 411);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 178);
+            this.dataGridView1.Size = new System.Drawing.Size(570, 214);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -400,7 +405,7 @@ namespace SuperShop
             // 
             this.btn_load.BackColor = System.Drawing.Color.Aquamarine;
             this.btn_load.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_load.Location = new System.Drawing.Point(696, 469);
+            this.btn_load.Location = new System.Drawing.Point(800, 493);
             this.btn_load.Name = "btn_load";
             this.btn_load.Size = new System.Drawing.Size(75, 30);
             this.btn_load.TabIndex = 30;
@@ -412,7 +417,7 @@ namespace SuperShop
             // 
             this.logoutbutton.BackColor = System.Drawing.Color.Aquamarine;
             this.logoutbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbutton.Location = new System.Drawing.Point(346, 596);
+            this.logoutbutton.Location = new System.Drawing.Point(38, 591);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(125, 35);
             this.logoutbutton.TabIndex = 31;
@@ -423,14 +428,38 @@ namespace SuperShop
             // btnremove
             // 
             this.btnremove.AutoSize = true;
+            this.btnremove.BackColor = System.Drawing.Color.Aquamarine;
             this.btnremove.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnremove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremove.Location = new System.Drawing.Point(630, 25);
+            this.btnremove.Location = new System.Drawing.Point(38, 88);
             this.btnremove.Name = "btnremove";
             this.btnremove.Size = new System.Drawing.Size(143, 22);
             this.btnremove.TabIndex = 32;
             this.btnremove.Text = "Remove Product";
             this.btnremove.Click += new System.EventHandler(this.btnremove_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Cyan;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.logoutbutton);
+            this.panel1.Controls.Add(this.btnremove);
+            this.panel1.Location = new System.Drawing.Point(-5, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(209, 652);
+            this.panel1.TabIndex = 33;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Aquamarine;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(431, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 33);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Super Shop";
             // 
             // AdminDashboard
             // 
@@ -440,13 +469,13 @@ namespace SuperShop
             this.BackgroundImage = global::SuperShop.Properties.Resources.reduced;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(887, 646);
-            this.Controls.Add(this.btnremove);
-            this.Controls.Add(this.logoutbutton);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_load);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.admindashsearchicon);
             this.Controls.Add(this.AdminAddproductpanel);
-            this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
             this.Load += new System.EventHandler(this.AdminDashboard_Load);
@@ -455,6 +484,8 @@ namespace SuperShop
             this.admindashsearchicon.ResumeLayout(false);
             this.admindashsearchicon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,5 +520,7 @@ namespace SuperShop
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button logoutbutton;
         private System.Windows.Forms.Label btnremove;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
     }
 }
