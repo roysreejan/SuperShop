@@ -234,7 +234,7 @@ namespace SuperShop
         {
             int Product_Id;
             string Product_Name = pnsearch.Text.Trim();
-            string Catagory = csearch.Text;
+            string Catagory = csearch.Text.Trim();
             string ErrMsg = null;
             if (int.TryParse(pidSearch.Text, out Product_Id))
             {
@@ -258,7 +258,7 @@ namespace SuperShop
             }
             else
             {
-                Catagory = pnsearch.Text;
+                Catagory = csearch.Text;
             }
             if (ErrMsg == null)
             {
@@ -300,6 +300,11 @@ namespace SuperShop
             RemoveProduct rmv = new RemoveProduct();
             rmv.Show();
             this.Hide();
+        }
+
+        private void csearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

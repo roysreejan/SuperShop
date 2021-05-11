@@ -279,6 +279,7 @@ namespace SuperShop
             this.csearch.Name = "csearch";
             this.csearch.Size = new System.Drawing.Size(274, 21);
             this.csearch.TabIndex = 33;
+            this.csearch.SelectedIndexChanged += new System.EventHandler(this.csearch_SelectedIndexChanged);
             // 
             // label6
             // 
